@@ -1,0 +1,56 @@
+PS C:\Users\USER\Desktop\TF> history
+
+  Id CommandLine
+  -- -----------
+   1 terraform --version
+   2 terraform --version
+   3 terraform --version
+   4 terraform --version
+   5 terraform --version
+   6 choco install terraform
+   7 terraform --version
+   8 choco install terraform
+   9 terraform --version
+  10 terraform init
+  11 terraform plan
+  12 git status
+  13 git add .
+  14 git status
+  15 git commit -m "ignore file added"
+  16 git status
+  17 terraform init
+  18 terraform plan
+  19 terraform plan
+  20 terraform plan
+  21 terraform plan
+  22 terraform plan
+  23 terraform plan
+  24 terraform init
+  25 terraform plan
+  26 aws configure
+  27 terraform plan
+  28 terraform plan
+  29 terraform apply
+  30 terraform plan
+  31 terraform apply
+  32 terraform plan
+  33 terraform apply
+  34 terraform apply
+  35 git commit "3 more files ignored"
+  36 git commit -m "3 more files ignored"
+  37 git status
+  38 git add commit -m "3 more files ignored"
+  39 git commit -a -m "3 more files ignored"
+  40 git status
+  41 terraform state list
+  42 terraform state show aws_instance.web[0]
+  43 terraform destroy -target aws_instance.web[0]
+  44 terraform destroy -target aws_instance.web[1] -auto-approve
+  45 terraform state list
+  46 terraform destroy -auto-approve
+  47 git log --oneline
+  48 git remote -v
+  49 git remote origin -v
+
+
+PS C:\Users\USER\Desktop\TF>
