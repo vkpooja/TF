@@ -1,0 +1,76 @@
+class 32 
+
+create aws instance with existing ami id hardcode
+---------
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.20.1"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+   region = "ap-south-1"
+}
+resource "aws_instance" "web" {
+  count=3
+  ami           = "ami-08df646e18b182346"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "tf-${count.index}"
+  }
+}
+
+********************************************
+class 33
+
+create vpc subnet datasource output variable&file workspace
+---------------------
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.20.1"
+    }
+  }
+}
+locals{
+  vpc_name="${terraform.workspace}-vpc"
+}
+variable "vpc_cidr_block"{
+  description="own vpc cidr block"
+}
+provider "aws" {
+  # Configuration options
+   region = "ap-south-1"
+}
+
+resource "aws_vpc" "ownvpc" {
+  cidr_block = var.vpc_cidr_block
+  tags = {
+    Name = local.vpc_name
+  }
+}
+data "aws_vpc" "existing_default_vpc"{
+  default="true"
+}
+
+
+resource "aws_subnet" "new" {
+  vpc_id     = data.aws_vpc.existing_default_vpc.id
+  cidr_block = "172.31.48.0/20"
+
+  tags = {
+    Name = "new1"
+  }
+}
+
+output "vpc_id"{
+  value=aws_vpc.ownvpc.id
+}

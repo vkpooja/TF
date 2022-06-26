@@ -54,3 +54,68 @@ PS C:\Users\USER\Desktop\TF> history
 
 
 PS C:\Users\USER\Desktop\TF>
+
+
+
+PS C:\Users\USER\Desktop\TF> history
+
+  Id CommandLine
+  -- -----------
+   1 terraformplan
+   2 terraform plan
+   3 terraform plan
+   4 terraform apply --auto-approve
+   5 terraform plan
+   6 terraform apply --auto-approve
+   7 terraform apply --auto-approve
+   8 terraform apply --auto-approve
+   9 terraform plan
+  10 terraform plan
+  11 terraform apply --auto-approve
+  12 terraform destroy --auto-approve
+  13 terraform apply --auto-approve
+  14 terraform apply --auto-approve
+  15 terraform apply --auto-approve
+  16 terraform apply --auto-approve
+  17 terraform destroy --auto-approve
+  18 terraform apply --auto-approve
+  19 terraform apply --auto-approve
+  20 terraform apply --auto-approve
+  21 terraform apply --auto-approve
+  22 terraform apply --auto-approve
+  23 terraform apply --auto-approve
+  24 terraform apply --auto-approve
+  25 terraform apply --auto-approve -var_file=terraform.vars
+  26 terraform apply --auto-approve - var_file=terraform.vars
+  27 terraform apply --auto-approve -var_file terraform.vars
+  28 terraform apply --auto-approve
+  29 terraform apply --auto-approve
+  30 terraform apply --auto-approve
+  31 terraform apply --auto-approve
+  32 terraform apply --auto-approve -var_file terraform_uat.tfvars
+  33 terraform apply -help
+  34 terraform apply --auto-approve - var-file terraform_uat.tfvars
+  35 terraform apply --auto-approve - var_file terraform_uat.tfvars
+  36 terraform apply --auto-approve -var-file terraform_uat.tfvars
+  37 terraform workspace list
+  38 terraform worspace new prod
+  39 terraform workspace new prod
+  40 terraform workspace select prod
+  41 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  42 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  43 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  44 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  45 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  46 terraform apply --auto-approve -var-file terraform_uat.tfvars
+  47 terraform apply --auto-approve -var-file terraform_prod.tfvars
+  48 terraform workspace list
+  49 terraform workspace new uat
+  50 terraform apply --auto-approve -var-file terraform_uat.tfvars
+  51 terraform destroy --auto-approve
+  52 terraform workspace select prod
+  53 terraform workspace delete uat
+  54 terraform destroy --auto-approve
+  55 terraform workspace select default
+  56 terraform workspace list
+  57 terraform workspace delete prod
+  58 terraform workspace list
